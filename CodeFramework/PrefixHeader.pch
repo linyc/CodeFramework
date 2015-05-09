@@ -1,0 +1,64 @@
+//
+//  PrefixHeader.pch
+//  WisdomCommunity
+//
+//  Created by yuecang on 15/5/7.
+//  Copyright (c) 2015年 TANGGUAN. All rights reserved.
+//
+
+#ifndef WisdomCommunity_PrefixHeader_pch
+#define WisdomCommunity_PrefixHeader_pch
+
+#define isLog YES
+
+#define  ios7 ([[[UIDevice currentDevice] systemVersion] floatValue]>=7.0?YES:NO)
+#define  ios8 ([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0?YES:NO)
+
+#define RGBA8(r,g,b,a) [UIColor colorWithRed:r/255.0 greed:g/255.0 blue:b/255.0 alpha:a/255.0]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r greed:g blue:b alpha:a]
+
+// View 坐标(x,y)和宽高(width,height)
+#define X(v)               (v).frame.origin.x
+#define Y(v)               (v).frame.origin.y
+#define WIDTH(v)           (v).frame.size.width
+#define HEIGHT(v)          (v).frame.size.height
+
+#define MinX(v)            CGRectGetMinX((v).frame) // 获得控件屏幕的x坐标
+#define MinY(v)            CGRectGetMinY((v).frame) // 获得控件屏幕的Y坐标
+
+#define MidX(v)            CGRectGetMidX((v).frame) //横坐标加上到控件中点坐标
+#define MidY(v)            CGRectGetMidY((v).frame) //纵坐标加上到控件中点坐标
+
+#define MaxX(v)            CGRectGetMaxX((v).frame) //横坐标加上控件的宽度
+#define MaxY(v)            CGRectGetMaxY((v).frame) //纵坐标加上控件的高度
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define Datetime_yMdHms @"yyyyMMddHHmmss"
+#define Datetime_yMd @"yyyyMMdd"
+#define Datetime_Hms @"HHmmss"
+#define Datetime_y_M_d_H_m_s @"yyyy-MM-dd HH:mm:ss"
+#define Datetime_y_M_d @"yyyy-MM-dd"
+#define Datetime_H_m_s @"HH:mm:ss"
+
+#endif
+
+
+#import "HelperFile.h"
+#import "HelperView.h"
+#import "GlobalInfo.h"
+
+#import "NSString+YCExtension.h"
+#import "NSObject+YCExtension.h"
+#import "UIImage+YCExtension.h"
+#import "UILabel+YCExtension.h"
+#import "NSDate+YCExtension.h"
+#import "NSString+MD5.h"
+#import "MBProgressHUD+Add.h"
+
+#import <AFNetworking.h>
+#import <MJExtension.h>
+
+
+

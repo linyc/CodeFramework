@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+
+target 'CodeFramework' do
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'MBProgressHUD'
+pod 'SparkInspector'
+end
+
+target 'CodeFrameworkTests' do
+
+end
+
+
